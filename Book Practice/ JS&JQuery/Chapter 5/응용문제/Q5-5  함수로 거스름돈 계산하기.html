@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5-5 함수로 거스름돈 계산하기</title>
+    <script>
+        function calc_change() {
+            var price = 1500
+            var num = 3
+            var pay = 10000
+            var change; 
+
+            change = pay - price*num
+
+            document.getElementById('price').innerHTML = price;
+            document.getElementById('num').innerHTML = num;
+            document.getElementById('pay').innerHTML = pay;
+            document.getElementById('change').innerHTML = change;
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <div style = "width: 300px; border: solid 1px grey; padding: 10px; margin-bottom: 10px;">
+
+        - 개당가격 : <span id="price"></span>원<br>
+        - 구매갯수 : <span id="num"></span>개<br>
+        - 지불금액 : <span id="pay"></span>원<br><br>
+        - 거스름돈 : <span id="change"></span>원<br>
+
+    </div>
+
+    <button onclick="calc_change()">거스름돈 계산하기</button>
+    
+</body>
+</html>

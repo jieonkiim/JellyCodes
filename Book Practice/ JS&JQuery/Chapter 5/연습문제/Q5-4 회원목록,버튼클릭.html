@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5-4 회원목록,버튼클릭</title>
+
+    <style>
+        table { border-collapse: collapse; }
+        td, th { border: 1px solid black; }
+        th { width: 120px; padding: 5px; background-color: #eeeeee; }
+        td { padding: 5px; text-align: center; }
+    </style>
+
+    <script>
+        function show_member() {
+            var contents = "";
+
+            contents = "<h3>회원 목록</h3>"
+            contents += "<table>"
+            contents += "<tr><th>번호</th><th>이름</th><th>아이디</th><th>비밀번호</th><th>전화번호</th></tr>"
+            contents += "<tr>"
+                for (var i=0; i<=4; i++) {
+                    var num = i + 1
+
+                    contents += "<tr>"
+                    contents += "<td>" + num + "</td><td>홍길동</td><td>hong</td><td>****</td><td>010-1234-5678</td>"
+                    contents += "</tr>"
+                }          
+                contents += "</table>"     
+                document.getElementById('result').innerHTML = contents;
+        }
+
+       
+
+    </script>
+</head>
+<body>
+    <button onclick="show_member()">회원 목록 보기</button>
+    <div id="result"></div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5-4 함수로 합계,평균 구하기</title>
+    <script>
+        function sum(kor, eng, math) {
+            var sum, avg;
+
+            sum = kor + eng + math
+            avg = sum/3
+
+            document.getElementById('kor').innerHTML = kor;
+            document.getElementById('eng').innerHTML = eng;
+            document.getElementById('math').innerHTML = math;
+            document.getElementById('sum').innerHTML = sum;
+            document.getElementById('avg').innerHTML = avg;
+        }
+    </script>
+</head>
+<body>
+    
+    
+    <div>
+        - 국어 : <span id="kor"></span>점<br>
+        - 영어 : <span id="eng"></span>점<br>
+        - 수학 : <span id="math"></span>점<br><br>
+        - 합계 : <span id="sum"></span>점<br>
+        - 평균 : <span id="avg"></span>점<br>
+    </div>
+
+    <button onclick="sum(80,90,100)">세과목 성적/합계 평균 구하기</button>
+</body>
+</html>

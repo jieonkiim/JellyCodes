@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 5-5 함수값의 반환</title>
+</head>
+<body>
+    
+    <script>
+        function add(a,b) {
+            var c = a + b
+            return c;
+        }
+
+        var value;
+        
+        value = add(5,7)
+        document.write(value + "<br>")
+
+        value = add(10,15)
+        document.write(value + "<br>")
+
+        document.write(add(-3,-11))
+
+    </script>
+</body>
+</html>

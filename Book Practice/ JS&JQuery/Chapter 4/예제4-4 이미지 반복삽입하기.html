@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 4-4, 이미지 반복 삽입 하기</title>
+</head>
+<body>
+    <div id="result"></div>
+    
+    <script>
+        var content = "";
+        var n = 1;
+
+        while (n<=4) {
+            content += "<img src='img/image.jpg' width='200px'>"
+            n++;
+        }
+
+        document.getElementById('result').innerHTML = content;
+    </script>
+</body>
+</html>
