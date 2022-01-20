@@ -1,0 +1,9 @@
+1. Express
+https://github.com/parkjunyoung/express-online
+
+2. Sequelize
+https://github.com/parkjunyoung/sequelize-crud
+
+3. SQL 파트에서 mySQL 설치는 아래의 폴더문서에서 확인가능합니다.
+
+➢ 나머지 강의자료는 별도의 자료없이 강의영상만 제공됩니다. 

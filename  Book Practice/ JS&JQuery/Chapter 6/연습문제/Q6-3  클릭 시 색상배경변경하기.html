@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6-3 버튼 클릭 시 글자색상과 배경 변경하기</title>
+    <style>
+        button {
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        function changeTextColor(obj) {
+            obj.style.color = "red"
+        }
+
+        function changeBgColor(obj) {
+            obj.style.backgroundColor = "pink";
+        }
+
+    </script>
+
+
+    <button onclick="changeTextColor(this)">글자색상 변경하기</button>
+    <button onclick="changeBgColor(this)">배경색상 변경하기</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5-2 책 값, 할인율, 배송료 계산 프로그램</title>
+</head>
+<body>
+    <script>
+        function get_pay(price, discount, shipping) {
+            var pay;
+            pay = price - (price*(discount/100)) + shipping
+    
+            document.getElementById('price').innerHTML = price;
+            document.getElementById('discount').innerHTML = discount;
+            document.getElementById('shipping').innerHTML = shipping;
+            document.getElementById('pay').innerHTML = pay;
+        }
+
+    </script>
+    <div>
+        - 책값 : <span id="price"></span>원<br>
+        - 할인율 : <span id="discount"></span>%<br>
+        - 배송료 : <span id="shipping"></span>원<br><br>
+        - 지불금액 : <span id="pay"></span>원<br>
+    </div>
+        
+    <button onclick="get_pay(25000, 10, 5000)">지불금액 계산하기</button>
+</body>
+</html>

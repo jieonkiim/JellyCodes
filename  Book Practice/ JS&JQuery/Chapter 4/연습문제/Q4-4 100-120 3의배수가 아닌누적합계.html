@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4-4 100-120 3의배수가 아닌 정수의 누적합계 구하기</title>
+</head>
+<body>
+    <div id="result"></div>
+    
+
+    <script>
+        var contents = "";
+        var sum = 0;
+
+        for ( num = 100; num <=120; num++) {
+            if ( num%3 != 0) {
+                sum += num;
+                contents += num + "까지의 합 : " + sum + "<br>"
+            }
+        }
+
+        document.getElementById('result').innerHTML = contents;
+    </script>
+    
+</body>
+</html>

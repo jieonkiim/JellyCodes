@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6-2 생성자 함수</title>
+</head>
+<body>
+    
+    <script>
+
+        function Employee(name, age, position, salary) {
+            this.name = name;
+            this.age = age;
+            this.position = position;
+            this.salary = salary;
+        }
+
+        var person1 = new Employee("김지희", 32, "사원", 3000000)
+        var person2 = new Employee("김지언", 52, "부장", 5000000)
+
+        var list = "";
+
+        list += "1. " + person1.name + " : "
+        list += person1.age + ", "
+        list += person1.position + ", "
+        list += person1.salary + ", "
+        list += "<br>"
+
+        list += "2. " + person2.name + " : "
+        list += person2.age + ", "
+        list += person2.position + ", "
+        list += person2.salary
+
+
+        document.write(list);
+    </script>
+</body>
+</html>
