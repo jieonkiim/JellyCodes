@@ -37,4 +37,53 @@
     }
 
 
+    //메뉴정보영역
+
+    .menu-info-area {
+        margin-top: -20px; // 메뉴이름이 이미지 위로 가기위해서 
+        padding: 0 $m-padding 20px;
+        
+        .common-inner {
+            position: relative;
+            padding: 18px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 4px 3px rgba(0,0,0,0.03);
+            z-index: 1;
+        }
+
+        .menu-info-group {
+            margin-top: 5px;
+
+            .menu-price {
+                line-height: 24px;
+                font-size: 19px;
+                font-weight: 700;
+                color: $point-color;
+            }
+
+            .menu-grade::before,
+            .menu-number-of-order::before {
+                content: '';
+                display: inline-block;
+                margin: 0 8px;
+                width: 1px;
+                height: 12px;
+                background-color: $booking-color-bg204;
+                transform: translateY(1px)
+            }
+
+            .menu-grade,
+            .menu-number-of-order {
+                line-height: 24px;
+            }
+        }
+        
+        .menu-desc {
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 22px;
+            color: $booking-color-text6;
+        }
+    }
 }
